@@ -1,15 +1,17 @@
 {
-	"name": "portfolio",
-	"type": "module",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview",
-		"astro": "astro"
-	},
-	"dependencies": {
-		"astro": "^2.0.12"
-	}
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Evan Fleet",
+  "type": "module",
+  "scripts": {
+    "astro": "astro",
+    "build": "astro build",
+    "dev": "astro dev",
+    "preview": "astro preview",
+    "start": "astro dev"
+  },
+  "dependencies": {
+    "astro": "^2.0.12"
+  }
 }
