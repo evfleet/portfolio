@@ -1,0 +1,19 @@
+services:
+  web:
+    build: .
+    volumes:
+      - portfolio:/app/dist
+  caddy:
+    image: caddy
+    volumes:
+      - caddy-config:/config
+      - caddy-data:/data
+      - portfolio:/usr/share/caddy:ro
+      - ./Caddyfile:/etc/caddy/Caddyfile
+    ports:
+      - "8080:80"
+
+volumes:
+  caddy-config:
+  caddy-data:
+  portfolio:
